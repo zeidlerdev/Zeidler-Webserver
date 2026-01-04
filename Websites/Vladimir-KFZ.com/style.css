@@ -1,0 +1,219 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: dmsherif;
+  src: url(sources/DMSerifText-Regular.ttf);
+}
+
+body {
+  font-family: 'dmsherif';
+  color: #333;
+  line-height: 1.6;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: brightness(55%);
+}
+.hero img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: brightness(55%);
+  border-bottom: grey 10px solid;
+  border-top: grey 10px solid;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero-content {
+  height: 30vh;
+  width: 80vh;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #f9a825;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: gray 2px solid;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  border-bottom: gray 2px solid;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service {
+  background: #cacaca;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+/*Inspektion Service*/
+.service-inspektion {
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  background-image: url(sources/car-work.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+.service-inspektion h3, .service-inspektion p {
+  background: rgba(0, 0, 0, 0.6);
+}
+.service-inspektion h3 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.service-inspektion p {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/*Ölwechsel Service*/
+.service-öl {
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  background-image: url(sources/oel.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+.service-öl h3, .service-öl p {
+  background: rgba(0, 0, 0, 0.6);
+}
+.service-öl h3 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.service-öl p {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/*Reifenmontage Service*/
+.service-reifen {
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  background-image: url(sources/wuchtmaschine.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+.service-reifen h3, .service-reifen p {
+  background: rgba(0, 0, 0, 0.6);
+}
+.service-reifen h3 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.service-reifen p {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.service:hover {
+  transform: translateY(-5px);
+}
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 4rem;
+}
+.descr-contact p{
+  font-size: 4rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  background: #cacaca;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-item a {
+  color: #f9a825;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact h3 {
+  font-size: 2.5rem;
+}
+.contact p {
+  font-size: 1.5rem;
+}
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+}
